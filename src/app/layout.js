@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import MenuBar from "./(components)/menu-bar";
+import MenuBar from "../components/menu-bar";
 import "./globals.css";
 
 export const metadata = {
