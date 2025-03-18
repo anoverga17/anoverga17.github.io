@@ -11,8 +11,8 @@ export default function MenuBar () {
                 <NavbarBrand className={styles.nav_logo} href="#home">Gabriel Anover</NavbarBrand>
                 <Nav className={styles.nav_items}>
                     <NavLink className={styles.nav_link} href="#home">About Me</NavLink>
-                    <NavLink className={styles.nav_link} href="#projects">Projects</NavLink>
-                    <NavLink className={styles.nav_link} href="#contact">Contact</NavLink>
+                    <NavLink className={styles.nav_link} href="/projects">Projects</NavLink>
+                    <NavLink className={styles.nav_link} href="/contact">Contact</NavLink>
                 </Nav>
             </Container>
         </Navbar>
