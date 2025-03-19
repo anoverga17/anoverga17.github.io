@@ -1,0 +1,17 @@
+.project_header {
+    display: flex;
+    justify-content: center;
+}
+
+.project_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project {
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: solid 2px;
+    margin: 1em;
+    padding: 10px;
+}

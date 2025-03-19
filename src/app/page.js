@@ -14,7 +14,7 @@ export default function Home() {
           In my spare time, I also enjoy going outdoors to do Astronomy and partaking in the traditional Japanese
           arts of Iaido and Kenjutsu (swordsmanship). 
         </div>
-        <div className={styles.about_title}>About Me</div>
+        <div className={styles.about_title} href="#about">About Me</div>
       </div>
     </div>
   );

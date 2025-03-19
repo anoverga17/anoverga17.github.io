@@ -10,7 +10,7 @@ export default function MenuBar () {
             <Container className={styles.nav_container}>
                 <NavbarBrand className={styles.nav_logo} href="/">Gabriel Anover</NavbarBrand>
                 <Nav className={styles.nav_items}>
-                    <NavLink className={styles.nav_link} href="/">About Me</NavLink>
+                    <NavLink className={styles.nav_link} href="/#about">About Me</NavLink>
                     <NavLink className={styles.nav_link} href="/projects">Projects</NavLink>
                     <NavLink className={styles.nav_link} href="/contact">Contact</NavLink>
                 </Nav>
