@@ -1,6 +1,9 @@
 .page {
     margin-top: 4vh;
     padding-left: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .about_section {
@@ -19,4 +22,26 @@
 
 .bio {
     font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile_message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: bold;
+    font-variation-settings: "ROND" 0;
+    font-size: 4em;
+}
+
+.profile_img {
+    height: 100%;
+    width: 70%;
+    object-fit: contain;
 }
