@@ -1,19 +1,10 @@
-.nav_container {
-    padding-top: 1vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
-
 .nav_items {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     flex-direction: row;
-    width: 25%;
+    width: 100%;
     margin-right: 8vw;
-    padding-top: 2px;
+    gap: 1em;
 }
 
 .nav_logo {

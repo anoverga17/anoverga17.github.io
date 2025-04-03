@@ -1,4 +1,5 @@
 import ProjectCard from "@/components/project-card"
+import { Row, Col } from "react-bootstrap"
 import styles from "./page.module.css"
 
 const projects = [
@@ -39,9 +40,9 @@ export default function Projects() {
     return (
         <>
             <h1 className={styles.project_header}>My Projects</h1>
-            <div className={styles.project_cards}>
-                {projects.map(p => <ProjectCard key={p.title} title={p.title} desc={p.desc} github={p.github}/>)}
-            </div>
+            <Row xs={1} md={2} lg={3} className="g-4">
+                {projects.map(p => <Col><ProjectCard key={p.title} title={p.title} desc={p.desc} github={p.github}/></Col>)}
+            </Row>
         </>
     )
 }

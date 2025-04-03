@@ -3,12 +3,7 @@
     border: solid 2px;
     margin: 1em;
     padding: 10px;
-}
-
-.project_card_img {
-    margin-top: 5px;
-    max-width: 80%;
-    max-height: 300px;
+    height: 100%;
 }
 
 .project_link_img {
