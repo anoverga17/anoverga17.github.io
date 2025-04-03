@@ -1,0 +1,12 @@
+.project {
+    border-radius: 10px;
+    border: solid 2px;
+    margin: 1em;
+    padding: 10px;
+    height: 100%;
+}
+
+.project_link_img {
+    float: right;
+    width: 1.5em;
+}
