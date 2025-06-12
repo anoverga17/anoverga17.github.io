@@ -1,11 +1,23 @@
+"use client" 
+
 import styles from "./page.module.css";
 import Image from 'react-bootstrap/Image';
+import { animate, motion, useMotionValue, useTransform } from "motion/react"
+import { useEffect } from "react"
 
 export default function Home() {
+  const count = useMotionValue(0);
+  const rounded = useTransform(() => "Hello World!".slice(0, Math.round(count.get())));
+
+  useEffect(() => {
+    const controls = animate(count, 12, { duration: 2 })
+    return () => controls.stop()
+  }, []);
+
   return (
     <div className={styles.page}>
         <div className={styles.profile_message}>
-            Hello World
+            <motion.pre>{rounded}</motion.pre>
         </div>
         <Image className={styles.profile_img} src="gabriel-1.jpg"/>
         <div className={styles.bio}>
