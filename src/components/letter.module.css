@@ -1,0 +1,25 @@
+.letter {
+    background-color: chartreuse;
+    border-radius: 10%;
+    position: absolute;
+    min-height: 50px;
+    min-width: 50px;
+    animation-duration: 15s;
+    animation-name: slide-in;
+    animation-iteration-count: infinite;
+    z-index:-1;
+}
+
+
+@keyframes slide-in {
+  from {
+    translate: -50px 50px;
+    scale: 100% 1;
+  }
+
+  to {
+    translate:  150vw -150vw;
+    scale: 100% 1;
+    rotate: 90deg;
+  }
+}

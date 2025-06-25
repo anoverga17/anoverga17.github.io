@@ -1,4 +1,5 @@
 import MenuBar from "../components/menu-bar";
+import Letter from "../components/letter"
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body>
         <MenuBar/>
         {children}
+        <Letter/>
       </body>
     </html>
   );
