@@ -8,13 +8,17 @@ export const metadata = {
   description: "This is the personal website of Gabriel Anover",
 };
 
+const name = "GABRIEL";
+
 export default function RootLayout({ children }) {
     const letter_animate = [];
     for (let i = 0; i < 15; i++) {
         letter_animate.push({
             key: i,
             x: `${Math.floor(Math.random() * 100)}vw`,
-            time: `${Math.floor(Math.random() * 10) + 5}s`
+            time: `${Math.floor(Math.random() * 10) + 5}s`,
+            letter: name[Math.floor(Math.random() * 7)],
+            colour: "#" + Math.floor(Math.random()*16777215).toString(16)
         });
     }
     
@@ -28,7 +32,7 @@ export default function RootLayout({ children }) {
             <body>
                 <MenuBar/>
                 {children}
-                {letter_animate.map(l => <Letter key={l.key} time={l.time} x={l.x}/>)}
+                {letter_animate.map(l => <Letter key={l.key} time={l.time} x={l.x} letter={l.letter} colour={l.colour}/>)}
             </body>
         </html>
     );

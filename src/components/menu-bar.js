@@ -4,7 +4,7 @@ import styles from './menu-bar.module.css'
 
 export default function MenuBar () {
     return (
-        <Navbar expand="lg" bg="white" data-bs-theme="light" sticky="top">
+        <Navbar expand="lg" data-bs-theme="light" sticky="top" style={{backgroundColor: "#fdffed"}}>
             <Container>
                 <NavbarBrand className={styles.nav_logo} href="/">Gabriel Anover</NavbarBrand>
                 <NavbarToggle aria-controls="basic-navbar-nav" />

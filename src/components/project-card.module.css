@@ -4,9 +4,11 @@
     margin: 1em;
     padding: 10px;
     height: 100%;
+    opacity: 0.9;
 }
 
 .project_link_img {
     float: right;
     width: 1.5em;
+    opacity: 1;
 }
