@@ -1,10 +1,10 @@
+
 .letter {
     background-color: chartreuse;
     border-radius: 10%;
-    position: absolute;
-    min-height: 50px;
-    min-width: 50px;
-    animation-duration: 15s;
+    position: fixed;
+    min-height: 40px;
+    min-width: 40px;
     animation-name: slide-in;
     animation-iteration-count: infinite;
     z-index:-1;
@@ -12,14 +12,10 @@
 
 
 @keyframes slide-in {
-  from {
-    translate: -50px 50px;
-    scale: 100% 1;
-  }
-
-  to {
-    translate:  150vw -150vw;
-    scale: 100% 1;
-    rotate: 90deg;
-  }
+    from {
+        transform: translateY(-80px) rotate(0deg);
+    }
+    to {
+        transform: translateY(-200vh) rotate(90deg);
+    }
 }
