@@ -1,4 +1,48 @@
-body {
-    font-family: "IBM Plex Sans JP", sans-serif;
-    background-color:#fdffed;
-}
+body{margin:0;background:#272822}
+*{box-sizing:border-box}
+a{color:#F8F8F2;text-decoration:none}
+a:hover{color:#FFFFFF}
+
+/* Monokai syntax roles */
+.k{color:#FF5C93}
+.t{color:#66D9EF;font-style:italic}
+.s{color:#E6DB74}
+.n{color:#AE81FF}
+.c{color:#9E9880}
+.f{color:#A6E22E}
+.o{color:#FD971F}
+.cy{color:#66D9EF}
+.jp{font-family:'M PLUS 1 Code',monospace;font-weight:400}
+
+.cursor{display:inline-block;width:0.55em;height:0.9em;margin-left:0.08em;vertical-align:-0.06em;background:#A6E22E;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.cursor{animation:none}}
+
+ul.log{list-style:none;margin:0;padding:0 0 0 1.5em;display:flex;flex-direction:column;gap:8px}
+ul.log li{position:relative}
+ul.log li::before{content:"-";position:absolute;left:-1.5em;color:#9E9880}
+
+.cmdline input::placeholder{color:#9E9880;opacity:1}
+.chip{cursor:pointer;white-space:nowrap}
+.chip:hover{border-color:#A6E22E;background:#3E3D32}
+.chip:disabled{opacity:.55;cursor:default}
+.chip:focus-visible,.cmdline input:focus-visible{outline:2px solid #66D9EF;outline-offset:2px}
+#skyart,#education{scroll-margin-top:80px}
+.ico{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.navbtn{cursor:pointer}
+.navbtn:hover{color:#FFFFFF;background:#3E3D32}
+.navbtn:focus-visible,.navlink:focus-visible{outline:2px solid #66D9EF;outline-offset:2px}
+.navlink:hover{color:#FFFFFF;background:#3E3D32}
+.ink-branch{fill:none;stroke:#2B2A27;stroke-width:9;stroke-linecap:round}
+.ink-twig{fill:none;stroke:#2B2A27;stroke-width:5;stroke-linecap:round}
+.ink-bird{fill:none;stroke:#3A3833;stroke-width:2;stroke-linecap:round}
+.sky-grid{fill:none;stroke:rgba(142,197,255,0.10);stroke-width:1}
+.sky-line{fill:none;stroke:rgba(142,197,255,0.4);stroke-width:1;stroke-dasharray:3 5}
+.glint{stroke:rgba(255,255,255,0.7);stroke-width:1}
+.dir{cursor:pointer}
+.dir:hover{border-color:#A6E22E !important;background:#272822 !important}
+.dir:focus-visible{outline:2px solid #66D9EF;outline-offset:2px}
+.dir:disabled{cursor:default}
+.promptbox:focus-within{border-color:#A6E22E;box-shadow:0 0 0 1px #A6E22E}
+.promptbox input:focus-visible{outline:none}
+@media (max-width: 560px){.pfx{display:none}}
